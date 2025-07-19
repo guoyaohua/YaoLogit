@@ -37,10 +37,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/yaologit"
-Documentation = "https://github.com/yourusername/yaologit#readme"
-Repository = "https://github.com/yourusername/yaologit"
-Issues = "https://github.com/yourusername/yaologit/issues"
+Homepage = "https://github.com/guoyaohua/YaoLogit"
+Documentation = "https://github.com/guoyaohua/YaoLogit#readme"
+Repository = "https://github.com/guoyaohua/YaoLogit"
+Issues = "https://github.com/guoyaohua/YaoLogit/issues"
 
 [project.optional-dependencies]
 dev = [
@@ -54,6 +54,7 @@ dev = [
 ]
 
 [tool.setuptools]
+package-dir = {"" = "src"}
 packages = ["yaologit"]
 
 [tool.setuptools.package-data]
@@ -82,10 +83,10 @@ strict_equality = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
-addopts = "-v --cov=yaologit --cov-report=html --cov-report=term"
+addopts = "-v --cov=src/yaologit --cov-report=html --cov-report=term"
 
 [tool.coverage.run]
-source = ["yaologit"]
+source = ["src/yaologit"]
 omit = ["*/tests/*", "*/test_*"]
 
 [tool.coverage.report]
